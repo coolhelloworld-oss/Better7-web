@@ -1,121 +1,396 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Welcome to Classic 7!</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="Assets/Branding/favicon.png">
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Better7 — Dein Desktop, neu gedacht</title>
+  <link rel="icon" href="https://image.jimcdn.com/app/cms/image/transf/none/path/s0265fddf63895aad/image/i230c837b21121d95/version/1766777777/image.png/" />
+  <meta name="title" content="Better7 — Dein Desktop, neu gedacht" />
+  <meta name="description" content="Better7 bringt einen klaren, modernen Look mit dem Gefühl von Vertrautheit. Alles auf einer Seite, schnell erklärt." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Better7 — Dein Desktop, neu gedacht" />
+  <meta property="og:description" content="Better7 bringt einen klaren, modernen Look mit dem Gefühl von Vertrautheit. Alles auf einer Seite, schnell erklärt." />
+  <meta property="og:image" content="https://image.jimcdn.com/app/cms/image/transf/none/path/s0265fddf63895aad/image/i230c837b21121d95/version/1766777777/image.png/" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0c10;
+      --card: rgba(16, 20, 30, 0.88);
+      --text: #f5f6ff;
+      --muted: #b2b8d6;
+      --accent: #ffc74a;
+      --accent-2: #8cff4a;
+      --primary: #7b63ff;
+    }
 
-        <meta name="title" content="Classic 7 - Your PC, resimplified.">
-        <meta name="description" content="Classic 7 is a Windows 10 modification designed to look 1:1 with Windows 7.">
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://classic7.lol">
-        <meta property="og:title" content="Classic 7 — Your PC, resimplified.">
-        <meta property="og:description" content="Classic 7 is a Windows 10 modification designed to look 1:1 with Windows 7.">
-        <meta property="og:image" content="https://classic7.lol/Assets/Preview.png">
-        <meta property="og:image:width" content="1112">
-        <meta property="og:image:height" content="311">
-    </head>
-    <body>
-        <div class="ctn-wrapper">
-            <div class="container">
-                <div class="navigation-bar">
-                    <img alt="Classic 7 Wordmark" src="Assets/Branding/wordmark.png" class="nav-wm">
-                    <div class="nav-links">
-                        <a href="/" class="nav-link-main">
-                            <div class="nav-link-layout">
-                                <img alt="Home Icon" src="Assets/Icons/Home.ico">
-                                <div class="nav-link-desc">
-                                    <h3>Home</h3>
-                                    <p>The home page of the website.</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="downloads.html" class="nav-link-main">
-                            <div class="nav-link-layout">
-                                <img alt="Download Folder Icon" src="Assets/Icons/Downloads.ico">
-                                <div class="nav-link-desc">
-                                    <h3>Downloads</h3>
-                                    <p>Download Classic 7 reliably from our stable and fast mirrors!</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="credits.html" class="nav-link-main">
-                            <div class="nav-link-layout">
-                                <img alt="People Together Icon" src="Assets/Icons/Credits.ico">
-                                <div class="nav-link-desc">
-                                    <h3>Credits</h3>
-                                    <p>The people who made Classic 7 alive and possible.</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://ko-fi.com/patrickpbt" class="nav-link-main">
-                            <div class="nav-link-layout">
-                                <img alt="Star Icon" src="Assets/Icons/Donate.ico">
-                                <div class="nav-link-desc">
-                                    <h3>Donate</h3>
-                                    <p>If you like our work, please donate to us to support our work!</p>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="extra-nav-links">
-                            <a href="https://discord.gg/classic7">
-                                <img alt="Mail Icon" src="Assets/Icons/Contact.ico" class="extra-nav">
-                            </a>
-                            <a href="https://github.com/Classic7-Mod">
-                                <img alt="GitHub Icon modified to look older" src="Assets/Icons/GitHub.ico" class="extra-nav">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="window-wrapper">
-                    <div class="main-content">
-                        <section class="hero">
-                            <div>
-                                <h1>Welcome to Classic 7</h1>
-                                <p class="desc-of-c7">
-                                   Classic 7 is a Windows 10 (IoT Enterprise LTSC 2021) modification made to look 1:1 to Windows 7.
-                                   It has all of the goodies that Windows 7 had along with some extras included!
-                                   Classic 7 features a 1:1 OOBE recreation, meaning it'll feel just like your PC simplified once more.
-                                </p>
-                                <div class="hero-actions">
-                                    <a class="w7-button" href="downloads.html"><span>Download now</span></a>
-                                    <a class="w7-button secondary" href="credits.html"><span>Meet the team</span></a>
-                                </div>
-                            </div>
-                            <img src="Assets/Preview.png" class="hero-preview" alt="Classic 7 preview">
-                        </section>
-                        <section class="section-card">
-                            <h3>What features does Classic 7 contain?</h3>
-                            <p>
-                               Classic 7 comes with most of the features that Windows 7 had, along with some exceptions that may or may not happen to be included in the near future.
-                               Some features included from Windows 7 are:
-                            </p>
-                            <ul>
-                                <li>Aero Glass! <a href="Assets/Preview Images/Aero Glass Preview.png">Preview of Aero working</a></li>
-                                <li>Support for .themepack files from Windows 7! <a href="Assets/Preview Images/ThemePack Preview.png">Preview of .themepack files working</a></li>
-                                <li>All of the beloved gadgets you remember! <a href="Assets/Preview Images/Gadgets Preview.png">Preview of gadgets working on the desktop</a></li>
-                                <li>Windows Media Center is fully intact and functional! <a href="Assets/Preview Images/WMC Preview.png">Preview of Media Center playing a file from Sample Music</a></li>
-                                <li>And of course, the beautiful theme elements from Windows 7! <a href="Assets/Preview Images/ComCtrl Preview.png">Preview of common controls used in Windows</a></li>
-                            </ul>
-                            <p>Some features that aren't brought back from Windows 7 are:</p>
-                            <ul>
-                                <li>3D animations for windows, this includes opening, closing, minimizing and maximizing a window.</li>
-                                <li>Flip 3D isn't brought back as no one has made a port just yet, the alternatives for Flip 3D are horrible and not recommended.</li>
-                                <li>Some system applications / gadgets may not work due to incompatibilities between Windows 7 and Windows 10.</li>
-                            </ul>
-                        </section>
-                        <section class="section-card">
-                            <h3>What are you waiting for?</h3>
-                            <p class="dl-p">If you like what you see, why not try Classic 7 out for a test drive? Download Classic 7 with the button below!</p>
-                            <a class="w7-button" href="downloads.html"><span>Download Classic 7</span></a>
-                        </section>
-                        <div class="footer">
-                            <p>Classic 7 is not affiliated with Microsoft and is a fan-project. Windows and the Windows logo are property of Microsoft. | BG by <a href="https://unsplash.com/photos/starry-night-sky-over-silhouetted-rock-formations-dfbwo7oTpPo">Jony Y on Unsplash</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    body {
+      font-family: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at top left, rgba(123, 99, 255, 0.4), transparent 40%),
+        radial-gradient(circle at 30% 60%, rgba(140, 255, 74, 0.25), transparent 40%),
+        radial-gradient(circle at 90% 20%, rgba(255, 199, 74, 0.25), transparent 40%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 12px 0 36px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand img {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(123, 99, 255, 0.3);
+    }
+
+    .brand span {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+      font-size: 0.95rem;
+      transition: 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      align-items: center;
+      padding: 40px;
+      border-radius: 28px;
+      background: linear-gradient(140deg, rgba(123, 99, 255, 0.2), rgba(140, 255, 74, 0.08)),
+        var(--card);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 4vw, 3.6rem);
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin-bottom: 24px;
+      max-width: 520px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #10101a;
+      box-shadow: 0 12px 30px rgba(255, 199, 74, 0.35);
+    }
+
+    .button.secondary {
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.2);
+      color: var(--text);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-card {
+      padding: 28px;
+      border-radius: 24px;
+      background: rgba(10, 12, 20, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .hero-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .hero-card li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(123, 99, 255, 0.15);
+      color: var(--text);
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+    }
+
+    section {
+      margin-top: 48px;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    .section-desc {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .download-panel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .download-highlight {
+      background: linear-gradient(135deg, rgba(123, 99, 255, 0.25), rgba(140, 255, 74, 0.1));
+      border: 1px solid rgba(123, 99, 255, 0.2);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">
+        <img alt="Better7 Logo" src="https://image.jimcdn.com/app/cms/image/transf/none/path/s0265fddf63895aad/image/i230c837b21121d95/version/1766777777/image.png/" />
+        <span>Better7</span>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <div class="badge">Neu gestaltet · Alles auf einer Seite</div>
+          <h1>Better7 macht deinen PC klarer, schneller und vertrauter.</h1>
+          <p>
+            Better7 kombiniert den ikonischen Look früherer Systeme mit einem modernen, aufgeräumten
+            Erlebnis. Hier findest du alles — Infos, Features und Download — ohne Seitenwechsel.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#download">Jetzt herunterladen</a>
+            <a class="button secondary" href="#features">Mehr erfahren</a>
+          </div>
         </div>
-    </body>
+        <div class="hero-card">
+          <h3>Auf einen Blick</h3>
+          <ul>
+            <li>🎨 Moderner Look mit Retro-Feeling</li>
+            <li>⚡ Schlankes Setup und schnelle Einrichtung</li>
+            <li>🧩 Fokus auf klare Oberflächen und Details</li>
+            <li>🔒 Stabil, sicher und leicht zu warten</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="features">
+        <h2 class="section-title">Features</h2>
+        <p class="section-desc">Das macht Better7 besonders — alles konzentriert, ohne Ablenkung.</p>
+        <div class="grid">
+          <div class="card">
+            <h4>Design mit Tiefe</h4>
+            <p>Elegante Glas- und Farbverläufe, inspiriert vom klassischen Desktop-Look.</p>
+          </div>
+          <div class="card">
+            <h4>Produktiv bleiben</h4>
+            <p>Ein Layout, das dich schneller zu Einstellungen, Apps und Dokumenten bringt.</p>
+          </div>
+          <div class="card">
+            <h4>Smart organisiert</h4>
+            <p>Strukturierte Bereiche, die Updates, Infos und Ressourcen bündeln.</p>
+          </div>
+          <div class="card">
+            <h4>Community Fokus</h4>
+            <p>Transparente Entwicklung und Platz für Feedback, damit Better7 wächst.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="download">
+        <h2 class="section-title">Download</h2>
+        <p class="section-desc">Wähle die passende Option und starte direkt mit Better7.</p>
+        <div class="download-panel">
+          <div class="card download-highlight">
+            <h4>Better7 Release</h4>
+            <p>Stabiler Build für den täglichen Einsatz. Empfohlen für alle Nutzer.</p>
+            <div style="margin-top: 18px;">
+              <a class="button primary" href="mailto:hello@better7.app">Download anfragen</a>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Preview Channel</h4>
+            <p>Teste kommende Features früher und hilf mit Feedback.</p>
+            <div style="margin-top: 18px;">
+              <a class="button secondary" href="#contact">Feedback senden</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <h2 class="section-title">Team</h2>
+        <p class="section-desc">Better7 ist ein Community-Projekt mit Fokus auf Qualität und Klarheit.</p>
+        <div class="grid">
+          <div class="card">
+            <h4>Design & UX</h4>
+            <p>Saubere Oberflächen, klare Navigation und eine starke Markenidentität.</p>
+          </div>
+          <div class="card">
+            <h4>Engineering</h4>
+            <p>Stabile Builds, schnelle Installationen und moderne Systemstandards.</p>
+          </div>
+          <div class="card">
+            <h4>Community</h4>
+            <p>Offene Roadmap, schnelle Updates und ein direkter Draht zum Team.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Kontakt</h2>
+        <p class="section-desc">Fragen, Feedback oder Kooperation? Wir freuen uns auf deine Nachricht.</p>
+        <div class="grid">
+          <div class="card">
+            <h4>Direkt erreichbar</h4>
+            <p>Schreib uns einfach eine Mail — wir melden uns schnell zurück.</p>
+            <div style="margin-top: 18px;">
+              <a class="button secondary" href="mailto:hello@better7.app">hello@better7.app</a>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Community Chat</h4>
+            <p>Verbinde dich mit anderen Better7 Nutzern und tausche dich aus.</p>
+            <div style="margin-top: 18px;">
+              <a class="button secondary" href="#">Community beitreten</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Better7 ist ein unabhängiges Projekt. Alle Produktnamen sind Eigentum der jeweiligen Markeninhaber.</p>
+    </footer>
+  </div>
+</body>
 </html>
